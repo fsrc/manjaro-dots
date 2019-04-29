@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+$HOME/.screenlayout/$(ls $HOME/.screenlayout | rofi -dmenu)
+

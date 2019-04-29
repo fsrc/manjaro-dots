@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+setxkbmap -query | grep -q "layout:     us"
+if [ $? -eq 0 ]
+then
+  setxkbmap se
+else
+  setxkbmap us
+fi
+
+xmodmap $HOME/.Xmodmap
+xset r rate 190 35
+xset b off
+
+exit 0

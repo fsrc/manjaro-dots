@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+autossh -M 10984 -N -f -o "PubkeyAuthentication=yes" -o "PasswordAuthentication=no" -i $HOME/.ssh/id_dsa -R 6665:localhost:22 fredrik@fsrc.pw
+
